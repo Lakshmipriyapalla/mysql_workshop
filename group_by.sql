@@ -24,3 +24,13 @@ select deptno,max(sal) from emp group by deptno;
 select deptno,min(sal) from emp group by deptno;
 -- Department-wise employees count + total salary.
 select  deptno,sum(sal) , count(*) from emp group by deptno;
+-- waqtdthe max sal in each deptno if the wmp doesnot work as president
+select deptno,max(sal) from emp where job!='president' group by deptno;
+-- waqtd the distint deptno withoit using  distinct?
+select deptno from emp group by deptno;
+-- waqtq the deptno along with the total sal if the sal is < 3000
+select deptno, sum(sal) from emp where sal< 3000 group by deptno;
+-- no.of emps & total sal needed to pay the emps who have 2 consecutices LL's in their names
+select count(*) ,sum(sal) from emp where ename like '%ll%';
+-- waqtd no.of distinct sal present in table
+select count(distinct sal) from emp;

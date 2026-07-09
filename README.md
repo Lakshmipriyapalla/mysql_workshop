@@ -17,6 +17,9 @@ This repository contains my SQL practice queries and exercises while learning My
   * AVG()
   * MIN()
   * MAX()
+* GROUP BY
+* HAVING
+* ORDER BY 
 
 ## Purpose
 
